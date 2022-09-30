@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 
 struct info{
     char hoten[20];
@@ -41,12 +44,13 @@ class calendar{
 
         //Cap nhat ngay vao danh sach tuan
         void tao(){
-            week[thu] = day;
+            week[thu] = ngay;
         }
 
         //dat san
-        void datSan(struct timeDay t, int x){
+        void datSan(struct timeDay* t, int x){
             t.daCoc[x] = 1;
         }
 
-}
+
+};   
