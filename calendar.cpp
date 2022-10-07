@@ -24,7 +24,6 @@ enum DaysOfWeek
 	SATURDAY
 };
 
-
 struct TimeDay week[8];
 
 class calendar{
@@ -34,7 +33,6 @@ class calendar{
         struct TimeDay ngay;
     
     public:
-
         // Them chuc nang thoi gian    
 	friend ostream &operator <<(ostream &out, const struct TimeDay &v)
 
@@ -47,7 +45,6 @@ class calendar{
         void datSan(struct timeDay* t, int x){
             t.daCoc[x] = 1;
         }
-
 
 };   
 
