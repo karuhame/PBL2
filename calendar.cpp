@@ -49,6 +49,6 @@ class calendar{
 
 ostream &operator <<(ostream &out, const struct timeDay &v){
     out<<"Ho va ten:"<< thongtin.hoten <<endl;
-    out<<cout<<" SDT:"<< thongtin.sdt<<endl;
+    out<<" SDT:"<< thongtin.sdt<<endl;
     return out;
 }
