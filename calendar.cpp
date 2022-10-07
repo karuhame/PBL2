@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 struct info{
     char hoten[20];
     char sdt[10];
