@@ -36,11 +36,7 @@ class calendar{
     public:
 
         // Them chuc nang thoi gian    
-        void hienThiThongTin(){
-            cout<< "Ho va ten:"<< thongtin.hoten<< endl;
-            cout<<" SDT:"<< thongtin.sdt<<endl;
-        //...
-        }
+	friend ostream &operator <<(ostream &out, const struct TimeDay &v)
 
         //Cap nhat ngay vao danh sach tuan
         void tao(){
@@ -54,3 +50,9 @@ class calendar{
 
 
 };   
+
+ostream &operator <<(ostream &out, const struct timeDay &v){
+    out<<"Ho va ten:"<< thongtin.hoten <<endl;
+    out<<cout<<" SDT:"<< thongtin.sdt<<endl;
+    return out;
+}
